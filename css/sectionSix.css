@@ -1,0 +1,32 @@
+.section-6 {
+  margin-top: 180px;
+  text-align: center;
+}
+.section-6 h2 {
+  font-family: "Alegreya", serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #434343;
+  margin-bottom: 60px;
+}
+.section-6 .icons {
+  height: 410px;
+  background-color: #F9F9F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.section-6 .icons .icon {
+  width: 210px;
+  height: 175px;
+}
+.section-6 .icons .icon h3 {
+  font-weight: normal;
+  font-size: 24px;
+}

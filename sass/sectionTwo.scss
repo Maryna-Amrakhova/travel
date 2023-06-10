@@ -1,0 +1,49 @@
+.section-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 240px;
+
+    img {
+        cursor: pointer;
+        transition: all 1s ease;
+        
+        &:hover {
+            transform: scale(1.5);
+            box-shadow: 2px 2px 5px #252525;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+        
+    h3 {
+        font-family: 'Alegreya', serif;
+        font-size: 32px;
+        font-weight: 500;
+        color: #434343;
+        width: 325px;
+    }
+        
+    .content {
+        font-size: 18px;
+        line-height: 150%;
+        width: 400px;    
+        text-align: justify;            
+    }
+        
+    .btn {
+        width: 160px;
+        padding: 10px 15px;
+        background: transparent;
+        transition: 0.5s;
+        border: 1px solid #797979;
+        cursor: pointer;
+        float: right;
+        
+        &:hover {
+            transform: scale(1.2) translate(8px);
+                    
+        }
+    }
+}    

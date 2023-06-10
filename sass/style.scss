@@ -1,0 +1,23 @@
+@import 'header';
+@import 'sectionOne';
+@import 'sectionTwo';
+@import 'sectionThre';
+@import 'sectionFour';
+@import 'sectionFive';
+@import 'sectionSix';
+@import 'footer';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    margin: auto;
+    width: 1440px;
+}
+
+
+

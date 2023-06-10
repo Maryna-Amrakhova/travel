@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>UA Travel</title>
+    <link rel="stylesheet" href="./css/style.css">    
+    <script src="script/I18NSwitch.js"></script>
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="head">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="logo">
+        </div>        
+        <ul>                
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Гарячі тури</a></li>
+            <li><a href="#">Натхнення</a></li>
+            <li><a href="#">Тури вихідного дня</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>       
+        <div class="lang">
+            <img src="./img/UA.svg" alt="UA" width="25" height="18">
+            <!-- <img src="./img/USA.svg" alt="USA" width="25" height="18"> -->
+            
+            <select id="languages" name="languages">
+                <option value="Ukrainian">UA</option>
+                <option value="English">EN</option>
+            </select>              
+        </div>       
+    </div>      
+           
+    <form class="example">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"></button>
+    </form>
+
+    <div class="main-section">
+        <div class="main-image">        
+            <p>В кожному куточку України - відчуй себе вдома</p>
+            <h1>Незабутня подорож Україною</h1>
+            <img src="./img/main.svg" alt="main">
+        </div>
+        
+        <div class="booking">
+            <form action="reservation.php" method="post">
+                <div class="elem-group">                    
+                    <select id="city-selection" name="cities" required>                                
+                        <option value="">Обрати подорож</option>
+                        <option value="Ужгород">Ужгород</option>
+                        <option value="Херсон">Херсон</option>
+                        <option value="Кам'янець-Подільський">Кам'янець-Подільський</option>
+                        <option value="Київ">Київ</option>
+                        <option value="Хотин">Хотин</option>
+                        <option value="Львів">Львів</option>
+                        <option value="Одеса">Одеса</option>
+                    </select>            
+                </div>
+                <div class="elem-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}" required>
+                </div>
+                <div class="elem-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-7891"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>            
+                <div class="elem-group inlined">
+                    <label for="adult">Дорослі</label>
+                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="child">Діти</label>
+                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="checkin-date">Дата з</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="elem-group inlined">
+                    <label for="checkout-date">Дата по</label>
+                    <input type="date" id="checkout-date" name="checkout" required>
+                </div>       
+                <div class="send">
+                    <button class="btn-submit" type="submit">Забронювати</button>
+                </div>
+            </form>                
+        </div>        
+    </div>
+</header>
+
+    <main>
+        <section class="section-1">
+            <div class="title">   
+                <h2>Відкрий Україну для себе</h2>
+            </div>
+            <div class="container">  
+                <div class="section-img">                              
+                    <img src="./img/Kyiv.svg" alt="Kyiv">                    
+                </div>
+                <div class="par1">
+                    <p>Кожен регіон України має свої пам’ятки та найбільш популярні маршрути</p>
+                </div>                  
+            </div>        
+        </section>
+
+        <section class="section-2">
+            <div class="image">
+                <img src="./img/Kamyanetsk.svg" alt="Kamyanetsk">
+                <h3>Кам’янець-Подільська фортеця</h3>
+                <p class="content">
+                    Один з найгарніших замків України, перлина Хмельниччини. Був збудований у XIV столітті литовськими князями. Перші двісті років існування замку були нелегкими: спочатку стіни були зруйновані пожежею, потім його захопила орда Батия, знищивши майже все населення. Увірвавшись в місто, татаро-монголи встановили своє панування, що тривало більше сорока років.
+                    Невідомо, як би склалася доля Кам’янець-Подільського замку, якби 1362 році він не перейшов у володіння п’ятьом племінникам литовського князя Ольгерда, який розбив татаро-монгол у битві під Синіми водами.
+                    Саме в 14 столітті Кам’янець-Подільський замок починає набувати того вигляду, що зберігся до наших днів.
+                    Вважається, що на початку 17 століття до стін фортеці підступив хан Осман з військом, рішуче налаштований захопити замок. Побачивши його вперше, він, вражений високими стінами та мурами, спитав у своїх підлеглих, чия рука створила це диво. «Аллах» – відповіли йому. «Нехай Аллах його і забирає», відповів Осман, та відступив, залишивши недоторканним Кам’янець-Подільський замок.
+                    Зараз стара фортеця «Кам’янець Подільський» внесена до списку визначних пам’яток архітектури ЮНЕСКО.                    
+                </p>
+                <button class="btn" onclick="readMore(this)">читати далі</button>
+            </div>
+            <div class="image">
+                <img src="./img/Askaniya.svg" alt="Askaniya">
+                <h3>Заповідник “Асканія-Нова”</h3>
+                <p class="content">
+                    Найбільший степовий заповідник Європи має давню і складну історію, адже історія заповідання його території нараховує близько 110 років. Асканія-Нова – це справжня перлина української природи, яка вже давно набула всесвітньої слави. В Асканії поєдналися цілинний таврійський степ і мрія людини створити щось надзвичайне. Тут зростають унікальні рослини, гніздяться рідкісні птахи та живуть тварини з різних континентів. У степу можна побачити сайгаків, бізонів, коней Пржевальського, антилоп та інших рідкісних тварин.
+                    Біосферний заповідник “Асканія-Нова” – унікальне явище не тільки для України, а й для всього світу. Це найбільший степовий заповідник Європи, який щороку відвідує близько 140 тисяч туристів.
+                </p>
+                <button class="btn" onclick="readMore(this)">читати далі</button>
+            </div>
+            <div class="image">
+                <img src="./img/Lake Syvash.svg" alt="Syvash">
+                <h3>Лемурійське озеро “Сиваш”</h3>
+                <p class="content">
+                    Рожеве озеро, тому що в дуже солоних водах росте мікро-очерет Донілена Соліна, який виділяє бета-каротин. Цікаво, що яскраво-рожевий колір озеро має не завжди. Для того, щоб воно мало таке привабливе, гарне забарвлення необхідна сонячна погода, а також інші показники: відповідна температура, швидкість вітру тощо.
+                    Характерною ознакою даного озера є його маленька глибина. В середньому вона становить близько одного метра. Максимальний показник – не перевищує трьох метрів.
+                    Лікувальні солі цієї водойми здатні принести чималу користь. Про це знає більшість туристів, які їдуть на це озеро до Херсонщини.
+                </p>
+                <button class="btn" onclick="readMore(this)">читати далі</button>
+            </div>            
+        </section>
+
+        <section class="section-3">         
+            <div class="slideshow-container"> 
+                              
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="./img/Khotyn.svg" style="width:100%">
+                    <div class="text">Хотинська фортеця</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="./img/Synevir.svg" style="width:100%">
+                    <div class="text">Озеро Синевир</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="./img/Dzarylgach.svg" style="width:100%">
+                    <div class="text">Острів Джарилгач</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="./img/canyon.svg" style="width:100%">
+                    <div class="text">Буцький каньйон</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="./img/Uz.svg" style="width:100%">
+                    <div class="text">Міст через річку Уж. Ужгород</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="./img/Sofiya.svg" style="width:100%">
+                    <div class="text">Софія Київська</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="./img/grand-canyon.svg" style="width:100%">
+                    <div class="text">Херсонський гранд-каньйон</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="./img/Church.svg" style="width:100%">
+                    <div class="text">Андріївська церква</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+                          
+        </section>
+
+        <section class="section-4">
+            <div class="title">
+                <h2>Здійсни свою мрію</h2>
+            </div>
+            <div class="container">
+                <div class="section-img">
+                    <img src="./img/tours.svg" alt="Kyiv">
+                </div>
+                <div class="par1">
+                    <p>Подорожуй автомобілем, поїздом, човном, велосипедом...
+                    Як тільки забажаєш</p>
+                </div>
+            </div>
+
+        
+        </section>
+
+        <section class="section-5">
+            <div class="image">
+                <img src="./img/auto_tour.svg" alt="auto tour">
+                <h3>Авто маршрути</h3>
+                <p class="content">
+                    Обираючи подорож автомобілем, ви відчуєте себе справжнім мандрівником. Потрібно підійти відповідально не тільки до вибору і розрахунку даного маршруту, а й автомобіля, адже дороги протягом усього шляху можуть бути різними. Безумовно, найкращим часом насолодитися красою України буде або весна, чи літо, так скаже вам будь-який турист. Однак і теплою золотою осінню в країні теж є що дивитися, а головне зробити красиві фотографії на пам'ять. Переваги подорожі на авто незаперечні: зупинитися можна в будь-якому місці і в будь-який час, ніхто не буде обмежувати вас за часом. Автомобіль дає певну свободу у виборі відповідних маршрутів та можливість відчути себе справжнім мандрівником.
+                </p>
+                <button class="btn" onclick="readMore(this)">читати далі</button>
+            </div>
+            <div class="image">
+                <img src="./img/tour_boat.svg" alt="tour by boat">
+                <h3>Прогулянки катером</h3>
+                <p class="content">
+                    Якщо захочете дізнатися де впадає Дунай у Чорне море, сміливо обирайте прогулянку катером по Дунайським плавням, адже саме тут Дунай створює силует вилки від розходження гирла на три рукави.  Місцеві жителі поєднали всі частини достатком каналів і сьогодні Вилкове — це понад 70 островів. Якщо хочеться побачити саме ту саму українську Венецію, вирушайте до старої частини Вилкового. Тут досі місцевий бігають дерев'яними кладками і розтинають на різнокольорових човниках. Вилково - містечко старовірів і нащадків козаків останньої Січі, що мальовничо розкинулося в гирлі Дунаю.
+                </p>
+                <button class="btn" onclick="readMore(this)">читати далі</button>
+            </div>
+            <div class="image">
+                <img src="./img/tour_foot.svg" alt="tour on foot">
+                <h3>Пішохідні маршрути</h3>
+                <p class="content">
+                    Найкраще пізнати Карпати можна тільки пішохідним маршрутом. Дземброня - місце початку пішохідних маршрутів на Чорногірський хребет. Піп-Іван Чорногірський — унікальна вершина: на ній наприкінці 30-х років ХХ ст. збудована кам’яна обсерваторія, яка стоїть і донині. І хоча наукові дослідження тут не проводяться вже більш ніж півсторіччя, будівля приваблює багатьох туристів.                    
+                    Окрім того, з Піп-Івану починається Чорногірський хребет, на якому зібрані 6 найвищих вершин України. Звідси можна пройтись ними всіма!
+                </p>
+                <button class="btn" onclick="readMore(this)">читати далі</button>
+            </div>
+        </section>
+
+        <section class="section-6">            
+                <h2>Чому обирають нас</h2>            
+            <div class="icons">
+                <div class="icon">
+                    <img src="./img/icon_price.svg" alt="price">
+                    <h3>Найкращі ціни</h3>
+                </div>
+                <div class="icon">
+                    <img src="./img/icon_booking.svg" alt="booking">
+                    <h3>Легке і швидке бронювання</h3>
+                </div>
+                <div class="icon">
+                    <img src="./img/icon_destination.svg" alt="destination">
+                    <h3>Різноманітні напрямки</h3>
+                </div>
+                <div class="icon">
+                    <img src="./img/icon_support.svg" alt="support">
+                    <h3>Цілодобова підтримка</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <div class="footer_container">
+        <!-- <img src="./img/footer_img.svg" alt="footer"> -->
+            <h2> Подорожуй Україною <br /> разом з нами </h2>
+            <p> Насолоджуйся колоритом і самобутністю <br />неповторних місць нашої країни, 
+                отримай <br />незабутні спогади
+            </p>    
+            <button>Обрати тур</button>   
+       </div>
+       <div class="contacts">
+            <div class="logo">
+                <img src="./img/logo_footer.png" alt="logo">
+            </div>
+            <small>© 2023. Всі права захищено</small>
+            <div class="social">
+                <img src="./img/twitter.svg" alt="tw">
+                <img src="./img/facebook.svg" alt="fb">            
+                <img src="./img/instagram.svg" alt="in">
+                <img src="./img/youtube.svg" alt="yt">
+            </div>
+        </div>
+    </footer>         
+   
+    
+</body>
+</html>

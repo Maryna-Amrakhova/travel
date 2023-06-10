@@ -1,0 +1,210 @@
+
+.head {
+    height: 90px;
+    color: #ffffff;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .logo {
+        padding-left: 90px;
+        margin-top: 15px;
+    }    
+
+    ul {
+        margin: auto;
+        padding: 0;
+        list-style: none;        
+        display: flex;
+        text-align: center;    
+        
+        li {
+            display: table-cell;
+            position: relative;
+            padding: 15px 0;
+            
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: #444444;        
+                padding: 0 20px; 
+        
+                &:after {
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 3px;                    
+                    left: 50%;
+                    position: absolute;
+                    background: #187900;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                    left: 0;                   
+                }            
+            } 
+        }        
+    }
+
+    .lang {
+        display: flex;
+        align-items: center;
+        padding-right: 70px;    
+
+        p {
+            padding: 0 10px 0 10px;
+            text-transform: uppercase;
+            display: flex;
+            color: #444444;            
+        }
+
+        select {
+            margin-left: 10px;
+        }
+    }        
+}
+
+.example {
+    display: flex;
+    float: right;
+    margin: 20px 60px;
+        
+    button {
+        width: 80px;
+        padding: 14px;
+        background: #187900;
+        color: white;
+        font-size: 17px;
+        border: none;        
+
+        &:hover {           
+            cursor: pointer;
+            background: #105100;
+        }
+    }
+}
+
+.main-section {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+
+    .main-image {
+        
+        margin-top: 15px;
+        display: flex;
+        justify-content: center; 
+
+        p, h1 {            
+            position: absolute;
+            color: #ffffff;
+        }
+        p {
+            font-size: 26px;
+            width: 600px;
+            padding-top: 120px;            
+        }
+
+        h1 {
+            font-family: 'Alegreya', serif;
+            font-size: 64px;
+            font-weight: 500;
+            padding-top: 180px;           
+            width: 580px;
+        }
+    }
+
+    .booking {
+        display: grid;
+        grid-template-columns: auto auto 1;           
+        justify-content: space-evenly;
+        width: 900px;
+        border-radius: 8px;
+        background: #ffffff;        
+        position: absolute;
+        top: 520px;          
+        padding: 40px 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+        justify-items: center; 
+        
+        form {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .elem-group, .elem-group inlined {
+            padding: 0 20px;
+            margin-bottom: 8px;            
+        }
+        
+        select {
+            padding: 0px 10px;
+            margin-top: 25px;
+            height: 44px;
+            width: 330px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input {
+            color: #187900;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            height: 44px;
+            line-height: 40px;
+            padding: 3px 10px 0 10px;
+            width: 100%;
+            margin-top: 4px;
+            margin-bottom: 6px;
+        }
+
+        input::placeholder {
+            color: rgb(150, 150, 150);
+            opacity: 1;
+            font-weight: 400;
+        }
+            
+        input:-ms-input-placeholder {
+            color: rgb(150, 150, 150);
+            opacity: 1;
+            font-weight: 400;
+        }
+        
+        label {
+            font-size: 16px;   
+            color: #707070;         
+        }
+
+        .send {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            .btn-submit {
+                width: 240px;
+                height: 46px;
+                background: #ffffff;
+                border: 2px solid #187900;
+                border-radius: 5px;
+                color: #434343;
+                font-size: 16px;
+                margin-top: 30px;
+                cursor: pointer;              
+                            
+                &:hover {
+                    background: #187900;
+                    color: #ffffff;
+                    border: none;
+                    transition: .5s;
+                    box-shadow: 0px 4px 7px rgba(8, 95, 0, 0.36);
+                }
+            }
+        }        
+    }    
+}

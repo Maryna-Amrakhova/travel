@@ -1,0 +1,30 @@
+.section-6 {    
+    margin-top: 180px;
+    text-align: center;
+                
+    h2 {
+        font-family: 'Alegreya', serif;
+        font-size: 48px;
+        font-weight: 500;
+        color: #434343;            
+        margin-bottom: 60px;
+    }
+ 
+    .icons {
+        height: 410px;
+        background-color: #F9F9F9;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .icon {
+            width: 210px;
+            height: 175px;
+
+            h3 {
+                font-weight: normal;
+                font-size: 24px;
+            }
+        }         
+    }   
+}
