@@ -69,3 +69,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+const btn = document.querySelector("#popup-btn");
+const overlay = document.querySelector("#overlay");
+const popup = document.querySelector("#popup");
+
+btn.addEventListener("click", function () {
+        overlay.style.display = "block";
+        popup.style.display = "block";
+});
+    
+overlay.addEventListener("click", function () {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+});
+    

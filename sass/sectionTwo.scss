@@ -1,7 +1,7 @@
+@import 'mixin';
+
 .section-2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 240px;
+    @include displayImg;
 
     img {
         cursor: pointer;
@@ -18,28 +18,15 @@
     }
         
     h3 {
-        font-family: 'Alegreya', serif;
-        font-size: 32px;
-        font-weight: 500;
-        color: #434343;
-        width: 325px;
+        @include titleImg;
     }
         
     .content {
-        font-size: 18px;
-        line-height: 150%;
-        width: 400px;    
-        text-align: justify;            
+        @include content;            
     }
         
     .btn {
-        width: 160px;
-        padding: 10px 15px;
-        background: transparent;
-        transition: 0.5s;
-        border: 1px solid #797979;
-        cursor: pointer;
-        float: right;
+        @include button;
         
         &:hover {
             transform: scale(1.2) translate(8px);

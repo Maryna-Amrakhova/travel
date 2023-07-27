@@ -1,3 +1,6 @@
+$size: 10px;
+$textColor:#434343;
+$btnColor: #187900;
 
 .head {
     height: 90px;
@@ -24,7 +27,7 @@
             
             a {
                 text-decoration: none;
-                font-size: 20px;
+                font-size: $size*2;
                 color: #444444;        
                 padding: 0 20px; 
         
@@ -36,7 +39,7 @@
                     height: 3px;                    
                     left: 50%;
                     position: absolute;
-                    background: #187900;
+                    background: $btnColor;
                     transition: width 0.3s ease 0s, left 0.3s ease 0s;
                     width: 0;
                 }
@@ -55,14 +58,14 @@
         padding-right: 70px;    
 
         p {
-            padding: 0 10px 0 10px;
+            padding: 0 $size;
             text-transform: uppercase;
             display: flex;
             color: #444444;            
         }
 
         select {
-            margin-left: 10px;
+            margin-left: $size;
         }
     }        
 }
@@ -73,9 +76,9 @@
     margin: 20px 60px;
         
     button {
-        width: 80px;
+        width: $size*7;
         padding: 14px;
-        background: #187900;
+        background: $btnColor;
         color: white;
         font-size: 17px;
         border: none;        
@@ -93,7 +96,7 @@
     align-items: center;
     text-align: center;
     position: relative;
-    margin-top: 20px;
+    margin-top: $size*2;
 
     .main-image {
         
@@ -153,7 +156,7 @@
         }
 
         input {
-            color: #187900;
+            color: $btnColor;
             cursor: pointer;
             font-weight: 700;
             font-size: 16px;
@@ -190,15 +193,15 @@
                 width: 240px;
                 height: 46px;
                 background: #ffffff;
-                border: 2px solid #187900;
+                border: 2px solid $btnColor;
                 border-radius: 5px;
-                color: #434343;
+                color: $textColor;
                 font-size: 16px;
                 margin-top: 30px;
                 cursor: pointer;              
                             
                 &:hover {
-                    background: #187900;
+                    background: $btnColor;
                     color: #ffffff;
                     border: none;
                     transition: .5s;

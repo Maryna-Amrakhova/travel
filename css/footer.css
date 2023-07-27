@@ -11,18 +11,15 @@ footer .footer_container h2 {
   font-family: "Alegreya", serif;
   font-size: 48px;
   font-weight: 500;
-  color: #ffffff;
   margin: 0;
 }
 footer .footer_container p {
   font-size: 24px;
-  color: #ffffff;
   padding-top: 30px;
 }
 footer .footer_container button {
   background-color: #187900;
   font-size: 20px;
-  color: #ffffff;
   padding: 10px 50px;
   margin-top: 70px;
   border: none;
@@ -40,22 +37,18 @@ footer .contacts {
   display: -ms-flexbox;
   display: flex;
   border-top: 2px solid #4D4D4D;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 160px;
+  margin-top: 140px;
+  color: #ffffff;
 }
 footer .contacts .logo {
   margin-top: 30px;
 }
-footer .contacts small {
-  color: #ffffff;
-  margin-top: 90px;
-}
 footer .contacts .social {
   margin-top: 30px;
+}
+footer .contacts .social p {
+  font-size: 20px;
+  color: #ffffff;
 }
 footer .contacts .social img {
   cursor: pointer;
@@ -64,4 +57,13 @@ footer .contacts .social img {
 footer .contacts .social img:hover {
   -webkit-transform: scale(1.2) translate(2px);
           transform: scale(1.2) translate(2px);
+}
+footer .contacts small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 90px;
 }

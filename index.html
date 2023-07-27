@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>UA Travel</title>
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">  
+    <!-- <link rel="stylesheet" href="node_modules/foundation-sites/dist/css/foundation-sites.css">
+    <link rel="stylesheet" href="node_modules/foundation-sites/dist/css/foundation-sites.min.css"> -->
     <script src="script/I18NSwitch.js"></script>
     <script src="./main.js" defer></script>
 </head>
@@ -14,15 +16,16 @@
 <body>
 
 <header>
+    
     <div class="head">
         <div class="logo">
             <img src="./img/logo.svg" alt="logo">
         </div>        
         <ul>                
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Гарячі тури</a></li>
-            <li><a href="#">Натхнення</a></li>
-            <li><a href="#">Тури вихідного дня</a></li>
+            <li><a href="#main">Головна</a></li>
+            <li><a href="#hot-tours">Гарячі тури</a></li>
+            <li><a href="#inspiration">Натхнення</a></li>
+            <li><a href="#week-tours">Тури вихідного дня</a></li>
             <li><a href="#">Контакти</a></li>
         </ul>       
         <div class="lang">
@@ -41,14 +44,14 @@
         <button type="submit"></button>
     </form>
 
-    <div class="main-section">
+    <div id="main" class="main-section">
         <div class="main-image">        
             <p>В кожному куточку України - відчуй себе вдома</p>
             <h1>Незабутня подорож Україною</h1>
             <img src="./img/main.svg" alt="main">
         </div>
         
-        <div class="booking">
+        <div id="book-form" class="booking">
             <form action="reservation.php" method="post">
                 <div class="elem-group">                    
                     <select id="city-selection" name="cities" required>                                
@@ -114,7 +117,7 @@
             </div>        
         </section>
 
-        <section class="section-2">
+        <section id="hot-tours" class="section-2">
             <div class="image">
                 <img src="./img/Kamyanetsk.svg" alt="Kamyanetsk">
                 <h3>Кам’янець-Подільська фортеця</h3>
@@ -148,7 +151,7 @@
             </div>            
         </section>
 
-        <section class="section-3">         
+        <section id="inspiration" class="section-3">         
             <div class="slideshow-container"> 
                               
                 <div class="mySlides fade">
@@ -236,7 +239,7 @@
         
         </section>
 
-        <section class="section-5">
+        <section id="week-tours" class="section-5">
             <div class="image">
                 <img src="./img/auto_tour.svg" alt="auto tour">
                 <h3>Авто маршрути</h3>
@@ -284,30 +287,46 @@
                     <h3>Цілодобова підтримка</h3>
                 </div>
             </div>
-        </section>
+        </section>      
+        
     </main>
 
     <footer>
+        
+        <!-- <div id="popup">
+            <iframe class="hotel" id="popup-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.2446268174114!2d24.028730369686578!3d49.84286136307759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6d7f695555%3A0xafa7a80469f0177!2sRudolfo!5e0!3m2!1sen!2sua!4v1681446181755!5m2!1sen!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> -->
+
        <div class="footer_container">
         <!-- <img src="./img/footer_img.svg" alt="footer"> -->
             <h2> Подорожуй Україною <br /> разом з нами </h2>
             <p> Насолоджуйся колоритом і самобутністю <br />неповторних місць нашої країни, 
                 отримай <br />незабутні спогади
-            </p>    
-            <button>Обрати тур</button>   
+            </p>  
+            <a href="#book-form">  
+                <button>Обрати тур</button>   
+            </a>
        </div>
-       <div class="contacts">
-            <div class="logo">
-                <img src="./img/logo_footer.png" alt="logo">
-            </div>
-            <small>© 2023. Всі права захищено</small>
-            <div class="social">
-                <img src="./img/twitter.svg" alt="tw">
-                <img src="./img/facebook.svg" alt="fb">            
-                <img src="./img/instagram.svg" alt="in">
-                <img src="./img/youtube.svg" alt="yt">
-            </div>
-        </div>
+       <div class="contacts">            
+                <div class="logo">
+                    <img src="./img/logo_footer.png" alt="logo">
+                </div>                
+                <!-- <div class="address">
+                    <p>Наші контакти:</p>
+                    <a href="#" id="popup-btn">м. Львів, вул. Вірменська, 44</a>                    
+                </div> -->
+                <small>© 2023. Всі права захищено</small>
+                <div class="social">
+                    <p>Ми в соцмережах:</p>
+                    <img src="./img/twitter.svg" alt="tw">
+                    <img src="./img/facebook.svg" alt="fb">
+                    <img src="./img/instagram.svg" alt="in">
+                    <img src="./img/youtube.svg" alt="youtube">
+                </div>                 
+        </div>                  
     </footer>         
    
     
