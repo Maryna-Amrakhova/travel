@@ -84,3 +84,6 @@ overlay.addEventListener("click", function () {
         popup.style.display = "none";
 });
     
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}

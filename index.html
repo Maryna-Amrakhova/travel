@@ -15,29 +15,42 @@
 
 <body>
 
-<header>
-    
-    <div class="head">
+<header>    
+      
+    <nav class="head">
         <div class="logo">
             <img src="./img/logo.svg" alt="logo">
-        </div>        
-        <ul>                
+        </div>
+        <ul>
+            <li><a href="#main">Головна</a></li>
+            <li><a href="#hot-tours">Гарячі тури</a></li>
+            <li><a href="#inspiration">Натхнення</a></li> 
+            <li><a href="#week-tours">Тури вихідного дня</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+        <div class="lang">
+            <img src="./img/UA.svg" alt="UA" width="25" height="18">
+            <!-- <img src="./img/USA.svg" alt="USA" width="25" height="18"> -->
+        
+            <select id="languages" name="languages">
+                <option value="Ukrainian">UA</option>
+                <option value="English">EN</option>
+            </select>
+        </div>
+        
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
             <li><a href="#main">Головна</a></li>
             <li><a href="#hot-tours">Гарячі тури</a></li>
             <li><a href="#inspiration">Натхнення</a></li>
             <li><a href="#week-tours">Тури вихідного дня</a></li>
             <li><a href="#">Контакти</a></li>
-        </ul>       
-        <div class="lang">
-            <img src="./img/UA.svg" alt="UA" width="25" height="18">
-            <!-- <img src="./img/USA.svg" alt="USA" width="25" height="18"> -->
-            
-            <select id="languages" name="languages">
-                <option value="Ukrainian">UA</option>
-                <option value="English">EN</option>
-            </select>              
-        </div>       
-    </div>      
+        </ul>
+    </div>
            
     <form class="example">
         <input type="text" placeholder="Search.." name="search">

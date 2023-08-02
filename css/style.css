@@ -228,7 +228,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0px 4px 7px rgba(8, 95, 0, 0.36);
-          box-shadow: 0px 4px 7px rgba(8, 95, 0, 0.36);
+  box-shadow: 0px 4px 7px rgba(8, 95, 0, 0.36);
 }
 
 .section-1 {
@@ -561,6 +561,7 @@ footer {
   background-repeat: no-repeat;
 }
 footer .footer_container {
+  margin-top: 160px;
   padding-top: 120px;
   text-align: center;
 }
@@ -620,12 +621,12 @@ footer .contacts .social img {
 }
 footer .contacts .social img:hover {
   -webkit-transform: scale(1.2) translate(2px);
-          transform: scale(1.2) translate(2px);
+  transform: scale(1.2) translate(2px);
 }
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -633,4 +634,206 @@ body {
   color: #444444;
   margin: auto;
   width: 1440px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #444444;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #105100;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 240px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    
+    .head .logo {
+      padding-left: 40px;
+    }
+    .head>ul {        
+        margin: 0 40px;             
+    }
+    .head>ul>li>a {
+      margin: 0px;      
+    }
+    .head>ul>li>a {
+      font-size: 16px;
+    }    
+    .example {      
+      margin-right: 450px;
+    }
+
+    #main {
+      margin: 0;
+    }
+
+    #main .main-image>img {
+      width: 140vh;
+      height: 80vh;
+    }
+
+    #book-form {
+      padding: 40px 0;
+      width: 750px;
+    }
+
+    .section-1 .container .section-img>img {
+      width: 540px;
+    }
+    .section-1 .container .par1 {
+      width: 370px;
+      height: 330px;
+    }
+    .section-1 .container .par1>p {
+      width: 320px;
+    }
+
+    #hot-tours {
+      display: grid;
+      justify-content: center;
+    }
+    #hot-tours .image {
+      padding-bottom: 40px;
+    }
+
+    #inspiration .slideshow-container {
+      margin: 0 200px;
+    }
+
+    .section-4 .container .section-img>img {
+      width: 540px;
+    }
+    .section-4 .container .par1 {
+      width: 370px;
+      height: 330px;
+    }
+    .section-4 .container .par1>p {
+      width: 320px;
+    }
+
+    #week-tours {
+      display: grid;
+      justify-content: center;
+    }
+    #week-tours .image {
+      padding-bottom: 40px;
+    }
+    .section-6 .icons .icon {
+      width: 180px;
+      height: 155px; 
+      margin: 0 20px;  
+    }
+    .section-6 .icons {
+      width: 140vh;
+      justify-content: center;       
+    }
+    .section-6 .icons .icon>h3 {
+      font-size: 20px;
+    }
+    .footer_container {
+      width: 140vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .head>ul {
+    display: none;
+  }
+
+  .head .lang {
+    display: none;    
+  }
+  .head .logo {
+    padding-left: 20px;
+  }
+
+  #hamburger-icon {
+    display: block;
+    
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    /* left: 480px; */
+    margin-top: 10px;
+  }
+  #hamburger-icon .mobile-menu li {
+    padding: 5px 0;
+  }
+    
+  .main-section {
+    width: 600px;    
+  }
+  #main .main-image p {
+    font-size: 22px;
+    width: 500px;    
+  }
+   #main .main-image h1 {
+    font-size: 48px;
+  }
+
+  #book-form {
+    width: 450px;
+  }
+  #book-form form {
+    display: block;
+  }
 }

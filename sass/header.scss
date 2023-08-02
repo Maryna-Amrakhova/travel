@@ -6,6 +6,7 @@ $btnColor: #187900;
     height: 90px;
     color: #ffffff;
     display: flex;
+    align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     .logo {
@@ -18,7 +19,11 @@ $btnColor: #187900;
         padding: 0;
         list-style: none;        
         display: flex;
-        text-align: center;    
+        text-align: center;         
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;        
         
         li {
             display: table-cell;
@@ -50,7 +55,7 @@ $btnColor: #187900;
                 }            
             } 
         }        
-    }
+    }        
 
     .lang {
         display: flex;
@@ -67,7 +72,7 @@ $btnColor: #187900;
         select {
             margin-left: $size;
         }
-    }        
+    } 
 }
 
 .example {
@@ -211,3 +216,4 @@ $btnColor: #187900;
         }        
     }    
 }
+
