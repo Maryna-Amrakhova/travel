@@ -337,7 +337,7 @@
   margin-top: 220px;
 }
 .section-3 .slideshow-container {
-  max-width: 800px;
+  max-width: 900px;
   position: relative;
   margin: auto;
 }
@@ -700,140 +700,207 @@ ul li:hover {
 .mobile-menu {
   display: none;
   left: 0;
-  height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
   width: 240px;
 }
 
 
 @media only screen and (max-width: 1024px) {
-    
-    .head .logo {
-      padding-left: 40px;
-    }
-    .head>ul {        
-        margin: 0 40px;             
-    }
-    .head>ul>li>a {
-      margin: 0px;      
-    }
-    .head>ul>li>a {
-      font-size: 16px;
-    }    
-    .example {      
-      margin-right: 450px;
-    }
 
-    #main {
-      margin: 0;
-    }
-
-    #main .main-image>img {
-      width: 140vh;
-      height: 80vh;
-    }
-
-    #book-form {
-      padding: 40px 0;
-      width: 750px;
-    }
-
-    .section-1 .container .section-img>img {
-      width: 540px;
-    }
-    .section-1 .container .par1 {
-      width: 370px;
-      height: 330px;
-    }
-    .section-1 .container .par1>p {
-      width: 320px;
-    }
-
-    #hot-tours {
-      display: grid;
-      justify-content: center;
-    }
-    #hot-tours .image {
-      padding-bottom: 40px;
-    }
-
-    #inspiration .slideshow-container {
-      margin: 0 200px;
-    }
-
-    .section-4 .container .section-img>img {
-      width: 540px;
-    }
-    .section-4 .container .par1 {
-      width: 370px;
-      height: 330px;
-    }
-    .section-4 .container .par1>p {
-      width: 320px;
-    }
-
-    #week-tours {
-      display: grid;
-      justify-content: center;
-    }
-    #week-tours .image {
-      padding-bottom: 40px;
-    }
-    .section-6 .icons .icon {
-      width: 180px;
-      height: 155px; 
-      margin: 0 20px;  
-    }
-    .section-6 .icons {
-      width: 140vh;
-      justify-content: center;       
-    }
-    .section-6 .icons .icon>h3 {
-      font-size: 20px;
-    }
-    .footer_container {
-      width: 140vh;
-    }
+  .head>ul>li>a {
+    margin: 0px;      
+  }
+  #main {
+    margin: 0;
+  }
+  #main .main-image>img {
+    width: 140vw;     
+  }
+  #book-form {
+    padding: 40px 0;
+    width: 750px;
+  }
+  .section-1 .container .par1 {
+    width: 340px;     
+  }
+  .section-1 .container .par1>p {
+    width: 320px;
+  }
+  #hot-tours {
+    display: grid;
+    justify-content: center;
+  }
+  #hot-tours .image {
+    padding-bottom: 60px;
+  }
+  #hot-tours img {
+    width: 70vw;
+  }
+  #hot-tours h3 {
+    width: 700px;
+  }
+  #hot-tours p {
+    width: 700px;
+  }
+  #hot-tours .content {
+    width: 700px;
+  }   
+  /* #inspiration .slideshow-container  {
+    width: 100%;
+  } */
+  .section-4 .container .par1 {
+    width: 340px;      
+  }    
+  #week-tours {
+    display: grid;
+    justify-content: center;
+  }
+  #week-tours img {
+    width: 70vw;
+  }
+  #week-tours .image {
+    padding-bottom: 60px;
+  }
+  #week-tours h3 {
+    width: 700px;
+  }
+  #week-tours .content {
+    width: 700px;
+  }
+  .section-6 .icons {
+    width: 140vw;           
+  }
+  .section-6 .icons .icon {
+    width: 180px;
+    height: 155px;      
+  }    
+  .section-6 .icons .icon>h3 {
+    font-size: 20px;
+  }
+  .footer_container {
+    width: 140vw;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  #main .main-image>img {
+    width: 100%;     
+  }
+  #hot-tours img {
+    width: 100vw;;
+  }
+  #hot-tours h3 {
+    width:760px;
+  }    
+  #hot-tours .content {
+    width: 760px;
+  }
+  #inspiration .slideshow-container {
+    max-width: 1000px;
+  }
+  #week-tours img {
+    width: 100vw;;
+  }
+  #week-tours h3 {
+    width: 760px;
+  }
+  #week-tours .content {
+    width: 760px;
+  }
+  .section-6 {
+    margin-top: 140px;
+  }
+  .section-6 .icons {
+    width: 100%;           
+  }
+  .footer_container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .head>ul {
     display: none;
   }
-
   .head .lang {
     display: none;    
   }
   .head .logo {
-    padding-left: 20px;
+    padding-left: 60px;
   }
-
+  .example {
+    display: none;
+  }
   #hamburger-icon {
     display: block;
-    
-    /* flex-wrap: wrap; */
-    /* position: absolute; */
-    /* left: 480px; */
-    margin-top: 10px;
+    float: right;
+    margin: 20px 80px;
   }
   #hamburger-icon .mobile-menu li {
     padding: 5px 0;
   }
-    
-  .main-section {
-    width: 600px;    
+  #main {
+    margin-bottom: 280px;
+  } 
+  #main .main-image>img {
+    width: 100%;     
   }
   #main .main-image p {
-    font-size: 22px;
-    width: 500px;    
+    font-size: 24px;
+    width: 700px;    
   }
    #main .main-image h1 {
-    font-size: 48px;
+    font-size: 56px;
   }
-
   #book-form {
-    width: 450px;
+    width: 500px;
   }
   #book-form form {
     display: block;
+  }
+  .section-1 .container img {
+    width: 80%;
+  }
+  .section-1 .container .par1 {
+    width: 280px;
+    height: 270px;
+  }
+  .section-1 .container .par1 p {   
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+  #hot-tours img {
+    width: 100%;
+  }
+  #hot-tours h3 {
+    width: 700px;
+  }    
+  #hot-tours .content {
+    width: 950px;
+  }
+  #hot-tours .btn {
+    margin-right: 10px;
+  }
+  .section-4 .container img {
+    width: 80%;
+  }
+  .section-4 .container .par1 {    
+    height: 270px;
+  }
+  .section-4 .container .par1 p {   
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+  #week-tours img {
+    width: 100%;
+  }
+  #week-tours h3 {
+    width: 700px;
+  }    
+  #week-tours .content {
+    width: 950px;
+  }
+  #week-tours .btn {
+    margin-right: 10px;
   }
 }
