@@ -636,7 +636,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   margin: auto;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
 }
 
 header a {
@@ -748,12 +749,9 @@ ul li:hover {
     top: 400px;
   }
 
-  .section-1 .title {
-    margin-right: 460px;
-  }
   .section-1 .container {
     display: flex;
-    margin-left: 160px;
+    margin-left: 140px;
   }
   .section-1 .container img {
     max-width: 500px;
@@ -800,13 +798,12 @@ ul li:hover {
     margin-left: 430px;
   }
   .section-4 .title {
-    display: block;
-    margin-right: 400px;
+    display: block;    
   }
   .section-4 .container {
     display: flex;
     justify-content: flex-start;
-    margin-left: 180px;
+    margin-left: 160px;
   }
   .section-4 .container img {
     max-width: 500px;
@@ -849,9 +846,8 @@ ul li:hover {
     margin-left: 300px;
   }
   .section-6 .icons {
-    width: 75%;
-    height: 360px;
-    justify-content: center;
+    width: 100%;
+    height: 360px;    
   }
   .section-6 .icons .icon {
     width: 180px;
@@ -861,11 +857,8 @@ ul li:hover {
     font-size: 20px;
   }
   .footer_container {
-    width: 75%;
-  }
-  .contacts {
-    margin-right: 380px;
-  }
+    width: 100%;
+  }  
   footer .contacts .logo {
     margin-top: 0;
   }
@@ -898,16 +891,16 @@ ul li:hover {
     margin-top: 20px;
   }
   #main p {
-    font-size: 24px;
-    margin-right: 240px;
+    font-size: 24px;   
+    margin: 0; 
   }
   #main h1 {
-    font-size: 52px;
-    margin-right: 240px;
+    font-size: 52px;   
+    margin: 0; 
   }
   #book-form {
-    width: 600px;
-    margin-right: 240px;
+    width: 600px; 
+    top: 320px;   
   }
   #book-form form {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -916,14 +909,11 @@ ul li:hover {
     width: 260px;
   }
 
-  .section-1 .title {
-    margin-right: 680px;
-  }
   .section-1 .title > h2 {
     font-size: 36px;
   }
   .section-1 .container {
-    margin-left: 120px;
+    margin-left: 80px;
   }
   .section-1 .container img {
     max-width: 400px;
@@ -961,14 +951,11 @@ ul li:hover {
     margin-left: 300px;
   }
 
-  .section-4 .title {
-    margin-right: 680px;
-  }
   .section-4 .title > h2 {
     font-size: 36px;
   }
   .section-4 .container {
-    margin-left: 120px;
+    margin-left: 80px;
   }
   .section-4 .container img {
     max-width: 400px;
@@ -1028,8 +1015,7 @@ ul li:hover {
     font-size: 22px;
   }
   footer .contacts {
-    margin-top: 120px;
-    margin-right: 260px;
+    margin-top: 120px;    
   }
 }
 
@@ -1059,26 +1045,24 @@ ul li:hover {
     margin-bottom: 380px;
     margin-top: 0;
   }
-  /* #main .main-image > img {
-    width: 100%;
-    max-width: 800px;
-  } */
+  #main .main-image {
+    margin-top: 0;
+  }
   #main .main-image p {
     font-size: 20px;
-    padding-top: 40px;
-    width: 300px;
-    margin-right: 520px;
+    padding-top: 20px;
+    width: 300px;    
   }
   #main .main-image h1 {
-    font-size: 42px;
-    width: 400px;
-    margin-right: 520px;
-    padding-top: 120px;
+    font-size: 36px;
+    width: 400px;    
+    padding-top: 100px;
+    line-height: 100%;
   }
 
   #book-form {
-    width: 400px;
-    margin-right: 530px;
+    width: 400px; 
+    top: 200px;   
   }
   #book-form form {
     display: block;
@@ -1088,49 +1072,48 @@ ul li:hover {
   }
 
   .section-1 .title>h2 {
-    font-size: 32px;
-    margin-right: 300px;
+    font-size: 30px;    
   }
   .section-1 .container {
-    margin-left: -30px;
+    margin-left: 5px;
   }
   .section-1 .container img {
-    width: 80%;
+    max-width: 270px;
   }
   .section-1 .container .par1 {
-    top: 30px;
-    width: 280px;
-    height: 220px;
+    top: 20px;
+    width: 240px;
+    height: 200px;
   }
   .section-1 .container .par1 p {
     font-size: 18px;
     padding-top: 20px; 
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 150%; 
-    width: 240px; 
+    width: 220px; 
   }
 
   #hot-tours {
-    margin-left: 60px;
+    margin-left: 70px;
     margin-top: 180px;
   }
   #hot-tours img {
     max-width: 100%;
-    width: 340px;
+    width: 320px;
   }
   #hot-tours h3 {
     font-size: 24px;
-    width: 350px;
+    width: 330px;
   }
   #hot-tours .content {
-    width: 350px;
+    width: 330px;
     font-size: 17px;
   }
   
   #inspiration .slideshow-container {
     max-width: 100%;
-    width: 450px;
-    margin-left: 10px;
+    width: 430px;
+    margin-left: 20px;
   }
   #inspiration .dots {
     margin-left: 150px;
@@ -1141,48 +1124,44 @@ ul li:hover {
   }
 
   .section-4 .title>h2 {
-    font-size: 32px;
-    margin-right: 300px;
+    font-size: 32px;    
   }
   .section-4 .container {
-    margin-left: -30px;
+    margin-left: 5px;
   }
   .section-4 .container img {
-    width: 80%;
+    max-width: 270px;
   }
   .section-4 .container .par1 {
-    bottom: 10px;
-    width: 280px;
-    height: 220px;
+    top: -5px;
+    width: 240px;
+    height: 200px;
   }
   .section-4 .container .par1 p {
     font-size: 18px;
     padding-top: 20px; 
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 150%; 
-    width: 240px; 
+    width: 220px; 
   }
 
   #week-tours {
-    margin-left: 60px;
+    margin-left: 70px;
     margin-top: 180px;
   }
   #week-tours img {
     max-width: 100%;
-    width: 340px;
+    width: 320px;
   }
   #week-tours h3 {
     font-size: 24px;
-    width: 350px;
+    width: 330px;
   }
   #week-tours .content {
-    width: 350px;
+    width: 330px;
     font-size: 17px;
   }
 
-  .section-6 {
-    width: 800px;
-  }
   .section-6>h2 {
     font-size: 32px;
     margin-left: 100px;
@@ -1208,18 +1187,146 @@ ul li:hover {
   }
   footer .footer_container>p {
     font-size: 20px;
-  }
-  footer .contacts {
-    margin-right: 150px;
-  }
+  }  
   footer .contacts .logo>img {
     width: 80%;
   }
   footer .contacts .logo {
+    margin-left: 10px;
     margin-bottom: 60px;
   }
   footer .contacts .social {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .head {
+    height: 70px;
+  }
+  #hamburger-icon {
+    margin-left: 20px;
+  }
+  #main .main-image p {
+    font-size: 18px;
+  }
+  #main .main-image h1 {
+    font-size: 32px;
+    padding-top: 80px;
+  }
+  #book-form {
+    width: 300px;
+    top: 160px;
+  }
+
+  .section-1 .title>h2 {
+    font-size: 28px;
+    margin-top: 240px;
+    margin-bottom: 60px;
+  }
+  .section-1 .container img {
+    max-width: 200px;
+  }
+  .section-1 .container .par1 {
+    top: 10px;
+    width: 180px;
+    height: 160px
+  } 
+  .section-1 .container .par1 p {
+    font-size: 16px;
+    padding-top: 0px;
+    width: 180px;
+    padding-left: 15px;
+  }
+
+  #hot-tours {
+    margin-left: 45px;
+    margin-top: 160px;
+  }
+  #hot-tours img {
+    width: 260px;
+  }
+  #hot-tours h3 {
+    font-size: 20px;
+    width: 270px;
+  }
+  #hot-tours .content {
+    font-size: 16px;
+    width: 270px;
+  }
+
+  #inspiration {
+    margin-top: 60px;
+  }
+  #inspiration .slideshow-container {
+    width: 320px;
+    margin-left: 15px;
+  }
+  #inspiration .slideshow-container .mySlides .text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #inspiration .dots {
+    margin-left: 80px;
+  }
+
+  .section-4 .title>h2 {
+    font-size: 28px;
+    margin-top: 240px;
+    margin-bottom: 60px;
+  }
+  .section-4 .container img {
+    max-width: 200px;
+  }
+  .section-4 .container .par1 {    
+    width: 180px;
+    height: 160px
+  } 
+  .section-4 .container .par1 p {
+    font-size: 16px;
+    padding-top: 0px;
+    width: 180px;
+    padding-left: 15px;
+  }
+
+  #week-tours {
+    margin-left: 45px;
+    margin-top: 160px;
+  }
+  #week-tours img {
+    width: 260px;
+  }
+  #week-tours h3 {
+    font-size: 20px;
+    width: 270px;
+  }
+  #week-tours .content {
+    font-size: 16px;
+    width: 270px;
+  }
+
+  .section-6>h2 {
+    font-size: 28px;
+    margin-left: 60px;
+  }
+  .section-6 .icons {
+    justify-content: end;
+  }
+
+  footer .footer_container>h2 {
+    font-size: 32px;
+  }
+  footer .footer_container>p {
+    font-size: 18px;    
+  }
+  footer .contacts .logo {
+    margin-left: 0;
+  }
+  footer .contacts>small {
+    display: none;
+  }
+  footer .contacts .social>img {
+    padding: 0 10px;
   }
 }
