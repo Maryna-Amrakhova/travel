@@ -1019,6 +1019,98 @@ ul li:hover {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .head .logo {
+    padding-left: 0;
+  }
+  .head > ul > li > a {
+    font-size: 16px;
+  }
+  #main .main-image p {
+    padding-top: 40px;
+  }
+  #main .main-image h1 {
+    padding-top: 100px;
+  }
+
+  #book-form {
+    width: 540px;
+    top: 280px;
+  }
+  #book-form form {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  #city-selection {
+    width: 230px;
+  }
+
+  .section-1 {
+    margin-top: 360px;
+  }
+  .section-1 .container {
+    margin-left: 40px;
+  }
+  .section-1 .container .par1 {
+    position: absolute;
+    top: 40px;
+  }
+
+  #hot-tours {
+    margin-left: 80px;
+  }
+  #hot-tours img {
+    max-width: 100%;
+    width: 400px;
+  }
+  #hot-tours h3 {
+    width: 400px;
+  }
+  #hot-tours .content {
+    width: 400px;
+  }
+
+  #inspiration .slideshow-container {
+    width: 550px;
+    margin-left: 20px;
+  }
+  #inspiration .dots {
+    margin-left: 210px;
+  }
+  .section-4 .container {
+    margin-left: 40px;
+  }
+  .section-4 .container .par1 {
+    position: absolute;
+    top: 40px;
+  }
+
+  #week-tours {
+    margin-left: 80px;
+  }
+  #week-tours img {
+    max-width: 100%;
+    width: 400px;
+  }
+  #week-tours h3 {
+    width: 400px;
+  }
+  #week-tours .content {
+    width: 400px;
+  }
+
+  .section-6>h2 {
+    margin-left: 160px;
+  }
+  .section-6 .icons {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    height: 340px;
+    padding: 20px 40px;
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
   .head > ul {
     display: none;
@@ -1073,10 +1165,7 @@ ul li:hover {
 
   .section-1 .title>h2 {
     font-size: 30px;    
-  }
-  .section-1 .container {
-    margin-left: 5px;
-  }
+  }  
   .section-1 .container img {
     max-width: 270px;
   }
@@ -1125,15 +1214,12 @@ ul li:hover {
 
   .section-4 .title>h2 {
     font-size: 32px;    
-  }
-  .section-4 .container {
-    margin-left: 5px;
-  }
+  }  
   .section-4 .container img {
     max-width: 270px;
   }
   .section-4 .container .par1 {
-    top: -5px;
+    top: 20px;
     width: 240px;
     height: 200px;
   }
@@ -1228,10 +1314,14 @@ ul li:hover {
   .section-1 .container img {
     max-width: 200px;
   }
+  .section-1 .container {
+    margin-left: 20px;
+  }
   .section-1 .container .par1 {
     top: 10px;
     width: 180px;
-    height: 160px
+    height: 160px;
+    position: absolute;
   } 
   .section-1 .container .par1 p {
     font-size: 16px;
@@ -1241,11 +1331,14 @@ ul li:hover {
   }
 
   #hot-tours {
-    margin-left: 45px;
+    margin-left: 40px;
     margin-top: 160px;
   }
   #hot-tours img {
     width: 260px;
+  }
+  #hot-tours img:hover {
+    transform: scale(1.2);
   }
   #hot-tours h3 {
     font-size: 20px;
@@ -1261,19 +1354,22 @@ ul li:hover {
   }
   #inspiration .slideshow-container {
     width: 320px;
-    margin-left: 15px;
+    margin-left: 10px;
   }
   #inspiration .slideshow-container .mySlides .text {
     font-size: 20px;
     margin-bottom: 20px;
   }
   #inspiration .dots {
-    margin-left: 80px;
+    margin-left: 70px;
   }
 
+  .section-4 .container {
+    margin-left: 20px;
+  }
   .section-4 .title>h2 {
-    font-size: 28px;
-    margin-top: 240px;
+    font-size: 28px;  
+    margin-top: 140px;  
     margin-bottom: 60px;
   }
   .section-4 .container img {
@@ -1281,7 +1377,9 @@ ul li:hover {
   }
   .section-4 .container .par1 {    
     width: 180px;
-    height: 160px
+    height: 160px;
+    top: 10px;
+    position: absolute;
   } 
   .section-4 .container .par1 p {
     font-size: 16px;
@@ -1291,11 +1389,14 @@ ul li:hover {
   }
 
   #week-tours {
-    margin-left: 45px;
+    margin-left: 40px;
     margin-top: 160px;
   }
   #week-tours img {
     width: 260px;
+  }
+  #week-tours img:hover {
+    transform: scale(1.2);
   }
   #week-tours h3 {
     font-size: 20px;
@@ -1308,10 +1409,10 @@ ul li:hover {
 
   .section-6>h2 {
     font-size: 28px;
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .section-6 .icons {
-    justify-content: end;
+    padding-left: 0;
   }
 
   footer .footer_container>h2 {
@@ -1320,13 +1421,14 @@ ul li:hover {
   footer .footer_container>p {
     font-size: 18px;    
   }
+  footer .footer_container button {
+    font-size: 18px;
+  }
   footer .contacts .logo {
     margin-left: 0;
   }
   footer .contacts>small {
     display: none;
   }
-  footer .contacts .social>img {
-    padding: 0 10px;
-  }
+  
 }
